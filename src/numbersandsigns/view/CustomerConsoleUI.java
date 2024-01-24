@@ -19,7 +19,6 @@ public class CustomerConsoleUI {
                 .reset());
     }
 
-
     public static void printFieldName(String text)
     {
         System.out.print(Ansi.ansi()
@@ -54,6 +53,27 @@ public class CustomerConsoleUI {
                         .reset());
     }
 
+    public static void printMenu(String text)
+    {
+        System.out.println(Ansi.ansi()
+                .fgDefault()
+                .bg(Ansi.Color.BLUE)
+                .fg(Ansi.Color.MAGENTA)
+                .a(Ansi.Attribute.INTENSITY_BOLD)
+                .a("- " + text + " ")
+                .reset());
+    }
+
+    public static void printSystemMessage(String text)
+    {
+        System.out.println(Ansi.ansi()
+                .fgDefault()
+                .bg(Ansi.Color.RED)
+                .fg(Ansi.Color.BLACK)
+                .a(Ansi.Attribute.INTENSITY_BOLD)
+                .a("- " + text + " ")
+                .reset());
+    }
 
 
 }

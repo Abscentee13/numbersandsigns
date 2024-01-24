@@ -1,3 +1,5 @@
+package numbersandsigns;
+
 import model.*;
 import service.JsonDataReader;
 import view.CustomerConsoleUI;
@@ -6,8 +8,10 @@ import view.UserConsoleUI;
 
 public class Application {
 
-public static User[] users;
+    public static User[] users;
 
+    //поточний юзер
+    public static User currentUser = new User(0, "", "", "", 18, "", "", "Гість");
 
     public static void runner() throws IllegalAccessException {
 
@@ -27,7 +31,6 @@ public static User[] users;
     }
 
         public static void main(String[] args) throws IllegalAccessException {
-
             System.out.println("Цифри та символи");
             runner();
         }

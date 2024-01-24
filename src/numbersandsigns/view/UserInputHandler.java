@@ -17,20 +17,20 @@ public class UserInputHandler {
 
     // Метод для отримання цілочисельного значення від користувача
     public int promptUserForInteger(String prompt) {
-        System.out.print(prompt + ": ");
+        CustomerConsoleUI.printSystemMessage(prompt + ": ");
+
         while (!scanner.hasNextInt()) {
-            System.out.println("Будь ласка, введіть ціле число.");
-            System.out.print(prompt + ": ");
-            scanner.next(); // Очистка буфера введення
+            CustomerConsoleUI.printSystemMessage("Будь ласка, введіть ціле число.");
+            CustomerConsoleUI.printSystemMessage(prompt + ": ");
+            scanner.next();
         }
         int result = scanner.nextInt();
-        scanner.nextLine(); // Очистка рядка введення
+        scanner.nextLine();
         return result;
     }
 
     // Інші методи опитування користувача можна додати за необхідності
 
-    // Закриття Scanner при завершенні використання
     public void closeScanner() {
         scanner.close();
     }
