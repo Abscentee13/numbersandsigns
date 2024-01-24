@@ -1,8 +1,10 @@
 package service;
 
 import com.fasterxml.jackson.core.exc.StreamReadException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.DatabindException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import model.User;
 
 import java.io.File;
 import java.io.IOException;
@@ -14,20 +16,24 @@ public class JsonDataReader {
 
 
 
-    public static void modelDataJsonReader(String pathToJson) {
+    public static void modelDataJsonReader(String pathToJson, Class dataClass) {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
-      //  try {
-                    //ArrayList data = objectMapper.readValue(new File(pathToJson) );
-                    System.out.println("Hjjjjjjjjjjjjjjj");
-      /*  } catch(StreamReadException ex){
-            throw new RuntimeException(ex);
-        } catch(DatabindException ex){
-            throw new RuntimeException(ex);
-        } catch(IOException ex){
-            throw new RuntimeException(ex);
-        }*/
+        try {
+            //User[] users = new User[]{objectMapper.readValue(new File(pathToJson), User.class)};
+
+            User[] users = objectMapper.readValue(new File(pathToJson), new TypeReference<User[]>() {});
+
+
+            for (User user: users)
+                    {
+                        user.displayUserInfo();
+                    }
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("user data");
     }
 
 }
