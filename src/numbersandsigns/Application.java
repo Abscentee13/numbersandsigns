@@ -11,7 +11,7 @@ public class Application {
         JsonDataReader.modelDataJsonReader("src//numbersandsigns//repository//UserData.json", User.class);
         JsonDataReader.modelDataJsonReader("src//numbersandsigns//repository//TagData.json", Tag.class);
 
-       // Menu.show();
+        Menu.show();
     }
 
 

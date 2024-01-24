@@ -5,9 +5,11 @@ public class Menu {
     }
 
     public static void show() {
-        while (true) {
-            System.out.println("MENU");
-        }
+        //while (true) {
+        CustomerConsoleUI.printLine('*', 20);
+            CustomerConsoleUI.printTitle ("MENU");
+        CustomerConsoleUI.printLine('*', 20);
+       // }
     }
 }
 
