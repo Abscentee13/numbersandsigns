@@ -7,6 +7,9 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="jackson-annotations-2.16.1" level="project" />
+    <orderEntry type="library" name="jackson-core-2.16.1" level="project" />
+    <orderEntry type="library" name="jackson-databind-2.16.1" level="project" />
   </component>
   <component name="SonarLintModuleSettings">
     <option name="uniqueId" value="5a37745c-b0bc-4ea7-8a16-25e915ff0dcd" />
