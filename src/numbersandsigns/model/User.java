@@ -8,8 +8,9 @@ public class User {
     private int age;
     private String password;
     private String email;
+    private String role;
 
-    public User(long id, String username, String firstName, String lastName, int age, String password, String email) {
+    public User(long id, String username, String firstName, String lastName, int age, String password, String email, String role) {
         this.id = id;
         this.username = username;
         this.firstName = firstName;
@@ -17,6 +18,7 @@ public class User {
         this.age = age;
         this.password = password;
         this.email = email;
+        this.role = role;
     }
 
     public User() {
@@ -80,7 +82,14 @@ public class User {
         this.email = email;
     }
 
-    // Перевизначення методу toString() для зручного виводу об'єкта в рядок
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
     @Override
     public String toString() {
         return "User{" +
@@ -91,6 +100,7 @@ public class User {
                 ", age=" + age +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
+                ", role='" + role + '\'' +
                 '}';
     }
 
@@ -103,6 +113,7 @@ public class User {
         System.out.println("Age: " + age);
         System.out.println("Password: " + password);
         System.out.println("Email: " + email);
+        System.out.println("Role: " + role);
     }
 
 }

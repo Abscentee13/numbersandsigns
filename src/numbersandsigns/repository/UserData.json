@@ -1,92 +1,102 @@
 [
   {
     "id": 1,
-    "username": "john_doe",
-    "firstName": "John",
-    "lastName": "Doe",
-    "age": 25,
-    "password": "john_password",
-    "email": "john@example.com"
+    "username": "admin_user",
+    "firstName": "Admin",
+    "lastName": "User",
+    "age": 30,
+    "password": "admin123",
+    "email": "admin@example.com",
+    "role": "Адмін"
   },
   {
     "id": 2,
-    "username": "alice_smith",
-    "firstName": "Alice",
-    "lastName": "Smith",
-    "age": 30,
-    "password": "alice_password",
-    "email": "alice@example.com"
+    "username": "guest_user",
+    "firstName": "Guest",
+    "lastName": "User",
+    "age": 25,
+    "password": "guest123",
+    "email": "guest@example.com",
+    "role": "Гість"
   },
   {
     "id": 3,
-    "username": "bob_jones",
-    "firstName": "Bob",
-    "lastName": "Jones",
+    "username": "user_1",
+    "firstName": "Regular",
+    "lastName": "User",
     "age": 28,
-    "password": "bob_password",
-    "email": "bob@example.com"
+    "password": "user123",
+    "email": "user1@example.com",
+    "role": "Користувач"
   },
   {
     "id": 4,
-    "username": "emma_wilson",
-    "firstName": "Emma",
-    "lastName": "Wilson",
-    "age": 22,
-    "password": "emma_password",
-    "email": "emma@example.com"
+    "username": "moderator_user",
+    "firstName": "Moderator",
+    "lastName": "User",
+    "age": 35,
+    "password": "moderator123",
+    "email": "moderator@example.com",
+    "role": "Модератор"
   },
   {
     "id": 5,
-    "username": "michael_davis",
-    "firstName": "Michael",
-    "lastName": "Davis",
-    "age": 35,
-    "password": "michael_password",
-    "email": "michael@example.com"
+    "username": "admin_user_2",
+    "firstName": "Admin",
+    "lastName": "User",
+    "age": 32,
+    "password": "admin456",
+    "email": "admin2@example.com",
+    "role": "Адмін"
   },
   {
     "id": 6,
-    "username": "olivia_miller",
-    "firstName": "Olivia",
-    "lastName": "Miller",
-    "age": 26,
-    "password": "olivia_password",
-    "email": "olivia@example.com"
+    "username": "guest_user_2",
+    "firstName": "Guest",
+    "lastName": "User",
+    "age": 27,
+    "password": "guest456",
+    "email": "guest2@example.com",
+    "role": "Гість"
   },
   {
     "id": 7,
-    "username": "charlie_brown",
-    "firstName": "Charlie",
-    "lastName": "Brown",
-    "age": 32,
-    "password": "charlie_password",
-    "email": "charlie@example.com"
+    "username": "user_2",
+    "firstName": "Regular",
+    "lastName": "User",
+    "age": 30,
+    "password": "user456",
+    "email": "user2@example.com",
+    "role": "Користувач"
   },
   {
     "id": 8,
-    "username": "sophia_moore",
-    "firstName": "Sophia",
-    "lastName": "Moore",
-    "age": 29,
-    "password": "sophia_password",
-    "email": "sophia@example.com"
+    "username": "moderator_user_2",
+    "firstName": "Moderator",
+    "lastName": "User",
+    "age": 38,
+    "password": "moderator456",
+    "email": "moderator2@example.com",
+    "role": "Модератор"
   },
   {
     "id": 9,
-    "username": "daniel_hall",
-    "firstName": "Daniel",
-    "lastName": "Hall",
-    "age": 31,
-    "password": "daniel_password",
-    "email": "daniel@example.com"
+    "username": "user_3",
+    "firstName": "Regular",
+    "lastName": "User",
+    "age": 25,
+    "password": "user789",
+    "email": "user3@example.com",
+    "role": "Користувач"
   },
   {
     "id": 10,
-    "username": "grace_roberts",
-    "firstName": "Grace",
-    "lastName": "Roberts",
-    "age": 27,
-    "password": "grace_password",
-    "email": "grace@example.com"
+    "username": "admin_user_3",
+    "firstName": "Admin",
+    "lastName": "User",
+    "age": 35,
+    "password": "admin789",
+    "email": "admin3@example.com",
+    "role": "Адмін"
   }
 ]

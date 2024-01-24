@@ -1,24 +1,34 @@
 import model.*;
 import service.JsonDataReader;
+import view.CustomerConsoleUI;
 import view.Menu;
+import view.UserConsoleUI;
 
 public class Application {
 
+public static User[] users;
 
-    public static void runner() {
 
+    public static void runner() throws IllegalAccessException {
 
-        JsonDataReader.modelDataJsonReader("src//numbersandsigns//repository//UserData.json", User.class);
-        JsonDataReader.modelDataJsonReader("src//numbersandsigns//repository//TagData.json", Tag.class);
+        users = JsonDataReader.modelDataJsonReader(Path.USER_JSON.getPath(), User[].class );
+
+        if (users.length != 0) {
+            for (User user : users) {
+                UserConsoleUI.displayUserInfo(user);
+                CustomerConsoleUI.printLine('-', 35);
+            }
+        }
+        else {
+            CustomerConsoleUI.printTitle("HO DATA");
+        }
 
         Menu.show();
     }
 
-
-        public static void main(String[] args) {
+        public static void main(String[] args) throws IllegalAccessException {
 
             System.out.println("Цифри та символи");
             runner();
-
         }
 }

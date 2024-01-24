@@ -1,5 +1,7 @@
 package model;
 
+import org.fusesource.jansi.Ansi;
+
 public class Tag {
     private String idTag;
     private String titleTag;
