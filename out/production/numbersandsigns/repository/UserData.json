@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "username": "john_doe",
+    "firstName": "John",
+    "lastName": "Doe",
+    "age": 25,
+    "password": "john_password",
+    "email": "john@example.com"
+  },
+  {
+    "id": 2,
+    "username": "alice_smith",
+    "firstName": "Alice",
+    "lastName": "Smith",
+    "age": 30,
+    "password": "alice_password",
+    "email": "alice@example.com"
+  },
+  {
+    "id": 3,
+    "username": "bob_jones",
+    "firstName": "Bob",
+    "lastName": "Jones",
+    "age": 28,
+    "password": "bob_password",
+    "email": "bob@example.com"
+  },
+  {
+    "id": 4,
+    "username": "emma_wilson",
+    "firstName": "Emma",
+    "lastName": "Wilson",
+    "age": 22,
+    "password": "emma_password",
+    "email": "emma@example.com"
+  },
+  {
+    "id": 5,
+    "username": "michael_davis",
+    "firstName": "Michael",
+    "lastName": "Davis",
+    "age": 35,
+    "password": "michael_password",
+    "email": "michael@example.com"
+  },
+  {
+    "id": 6,
+    "username": "olivia_miller",
+    "firstName": "Olivia",
+    "lastName": "Miller",
+    "age": 26,
+    "password": "olivia_password",
+    "email": "olivia@example.com"
+  },
+  {
+    "id": 7,
+    "username": "charlie_brown",
+    "firstName": "Charlie",
+    "lastName": "Brown",
+    "age": 32,
+    "password": "charlie_password",
+    "email": "charlie@example.com"
+  },
+  {
+    "id": 8,
+    "username": "sophia_moore",
+    "firstName": "Sophia",
+    "lastName": "Moore",
+    "age": 29,
+    "password": "sophia_password",
+    "email": "sophia@example.com"
+  },
+  {
+    "id": 9,
+    "username": "daniel_hall",
+    "firstName": "Daniel",
+    "lastName": "Hall",
+    "age": 31,
+    "password": "daniel_password",
+    "email": "daniel@example.com"
+  },
+  {
+    "id": 10,
+    "username": "grace_roberts",
+    "firstName": "Grace",
+    "lastName": "Roberts",
+    "age": 27,
+    "password": "grace_password",
+    "email": "grace@example.com"
+  }
+]
